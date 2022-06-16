@@ -1,0 +1,36 @@
+.preference {
+  padding-bottom: 0;
+}
+.preference-list {
+  display: flex;
+  justify-content: space-between;
+}
+.preference-item-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: var(--tipical-margin);
+}
+.preference-item:not(:last-child) {
+  margin-right: var(--tipical-margin);
+  max-width: 270px;
+}
+.preference-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+.preference-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}

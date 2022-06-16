@@ -1,0 +1,100 @@
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__logo {
+  font-family: "Raleway", Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-right: 93px;
+}
+
+.header__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  padding: 32px 0;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+.header__link:hover,
+.header__link:focus {
+  color: var(--accent-color);
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__item {
+  display: block;
+  position: relative;
+}
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-tel__link {
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-color);
+}
+
+.header-mail__link {
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-color);
+  margin-left: auto;
+}
+.header__mail {
+  margin-right: 50px;
+}
+.header-tel__link:hover,
+.header-tel__link:focus {
+  color: var(--accent-color);
+}
+
+.header-mail__link:hover,
+.header-mail__link:focus {
+  color: var(--accent-color);
+}
+
+.header-contact__list {
+  margin-left: auto;
+}
+.header-mail__icon {
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  margin-right: 10px;
+  fill: var(--main-text-color);
+}
+.header-tel__icon {
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  margin-right: 10px;
+  fill: var(--main-text-color);
+}
+.header-mail__link:focus .header-mail-icon,
+.header-mail__link:hover .header-mail-icon {
+  fill: var(--accent-color);
+}
+.header-tel__link:focus .header-tel-icon,
+.header-tel__link:hover .header-tel-icon {
+  fill: var(--accent-color);
+}

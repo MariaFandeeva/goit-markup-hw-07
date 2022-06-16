@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+}
+.link.active {
+  color: var(--accent-color);
+}
+.link.active::before {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  content: "";
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  display: block;
+}
