@@ -8,6 +8,11 @@
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .social-list {
   display: flex;
@@ -16,10 +21,7 @@
 .social-list-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-}
+
 .social-list-link:hover .social-link-icon,
 .social-list-link:focus .social-link-icon {
   fill: var(--main-title-color);

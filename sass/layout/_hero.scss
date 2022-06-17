@@ -43,8 +43,9 @@
   border: none;
   color: #ffffff;
   background-color: var(--accent-color);
-}
-.hero-btn-text:hover,
-.hero-btn-text:focus {
-  background-color: #188ce8;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

@@ -1,9 +1,10 @@
-.header .container {
-  display: flex;
-  align-items: center;
-}
 .header {
   border-bottom: 1px solid #ececec;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
 }
 .header__logo {
   font-family: "Raleway", Tahoma, sans-serif;
@@ -24,11 +25,13 @@
   color: var(--title-color);
   padding: 32px 0;
   transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.header__link:hover,
-.header__link:focus {
-  color: var(--accent-color);
-}
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -36,10 +39,12 @@
 .header__item {
   display: block;
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
-.header__item:not(:last-child) {
-  margin-right: 50px;
-}
+
 .header-tel__link {
   transition: color var(--transition-duration) var(--transition-timing-function);
   display: flex;
@@ -50,6 +55,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-mail__link {
@@ -63,18 +73,14 @@
   letter-spacing: 0.02em;
   color: var(--header-color);
   margin-left: auto;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .header__mail {
   margin-right: 50px;
-}
-.header-tel__link:hover,
-.header-tel__link:focus {
-  color: var(--accent-color);
-}
-
-.header-mail__link:hover,
-.header-mail__link:focus {
-  color: var(--accent-color);
 }
 
 .header-contact__list {
@@ -85,16 +91,17 @@
   margin-right: 10px;
   fill: var(--main-text-color);
 }
+
+.header-mail__link:focus .header-mail__icon,
+.header-mail__link:hover .header-mail__icon {
+  fill: var(--accent-color);
+}
 .header-tel__icon {
   transition: fill var(--transition-duration) var(--transition-timing-function);
   margin-right: 10px;
   fill: var(--main-text-color);
 }
-.header-mail__link:focus .header-mail-icon,
-.header-mail__link:hover .header-mail-icon {
-  fill: var(--accent-color);
-}
-.header-tel__link:focus .header-tel-icon,
-.header-tel__link:hover .header-tel-icon {
+.header-tel__link:focus .header-tel__icon,
+.header-tel__link:hover .header-tel__icon {
   fill: var(--accent-color);
 }
