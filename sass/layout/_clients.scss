@@ -9,9 +9,7 @@
 .client {
   transition: border-color var(--transition-duration)
     var(--transition-timing-function);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;

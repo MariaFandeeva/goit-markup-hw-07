@@ -2,20 +2,6 @@
   background-color: #2f303a;
   padding: 60px 0;
 }
-.footer-logo-link {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-.footer-logo {
-  color: #ffffff;
-}
 
 .contacts {
   font-style: normal;
@@ -71,9 +57,7 @@
 .footer-social-link {
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
   width: 44px;
   height: 44px;
   border-radius: 50%;

@@ -13,9 +13,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -27,8 +25,9 @@
 .modal-close-btn-icon {
   fill: #000000;
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-  fill: var(--accent-color);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent-color);
+  }
 }
