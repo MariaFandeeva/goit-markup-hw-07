@@ -704,7 +704,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.clients-title {
+.clients__title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -721,23 +721,22 @@ img {
   border-radius: 4px;
 }
 
+.client:hover, .client:focus {
+  border-color: var(--accent-color);
+}
+
 .clients-icon {
   transition: fill var(--transition-duration) var(--transition-timing-function);
   fill: #afb1b8;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: var(--tipical-margin);
-}
-
-.client:hover,
-.client:focus {
-  border-color: var(--accent-color);
-}
-
 .client:hover .clients-icon,
 .client:focus .clients-icon {
   fill: var(--accent-color);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: var(--tipical-margin);
 }
 
 .footer {
@@ -815,8 +814,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-link:hover, .footer-social-link:focus {
   background-color: var(--accent-color);
 }
 
